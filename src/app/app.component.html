@@ -1,0 +1,65 @@
+<ion-app>
+  
+
+  <ion-menu menuId="main-menu" contentId="main">
+    <ion-header>
+      <ion-toolbar>
+      
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle>
+          <ion-item>
+            <ion-icon slot="start"></ion-icon>
+            <ion-label>Introduction</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      <ion-menu-toggle>
+        <ion-item routerLink="dossiers">
+          <ion-icon name="folder" slot="start"></ion-icon>
+          <ion-label>Dossiers</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle>
+        <ion-item routerLink="aleatoire">
+          <ion-icon name="help-outline" slot="start"></ion-icon>
+          <ion-label>Mot Aléatoire</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle>
+        <ion-item routerLink="code">
+          <ion-icon name="qr-code-outline" slot="start"></ion-icon>
+          <ion-label>Flash Code</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle>
+        <ion-item routerLink="livres">
+          <ion-icon name="book" slot="start"></ion-icon>
+          <ion-label>Livres</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle>
+        <ion-item routerLink="muiques">
+          <ion-icon name="musical-notes-outline" slot="start"></ion-icon>
+          <ion-label>Musiques</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle>
+        <ion-item routerLink="histoires">
+          <ion-icon name="receipt-outline" slot="start"></ion-icon>
+          <ion-label>Histoires</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle>
+        <ion-item routerLink="connecter">
+          <ion-icon name="log-in-outline" slot="start"></ion-icon>
+          <ion-label>Se connecter</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>
